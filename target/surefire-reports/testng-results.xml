@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-13T18:02:38 IST" name="Suite" finished-at="2021-07-13T18:03:18 IST" duration-ms="39796">
+    <groups>
+    </groups>
+    <test started-at="2021-07-13T18:02:38 IST" name="Test" finished-at="2021-07-13T18:03:18 IST" duration-ms="39796">
+      <class name="stringProg.SideMenuTestNG">
+        <test-method signature="verifyPageTitleTest()[pri:1, instance:stringProg.SideMenuTestNG@762ef0ea]" started-at="2021-07-13T18:02:38 IST" name="verifyPageTitleTest" finished-at="2021-07-13T18:02:45 IST" duration-ms="6727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitleTest -->
+        <test-method signature="verifyPageTitleTest1()[pri:2, instance:stringProg.SideMenuTestNG@762ef0ea]" started-at="2021-07-13T18:02:45 IST" name="verifyPageTitleTest1" finished-at="2021-07-13T18:03:01 IST" duration-ms="15500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitleTest1 -->
+        <test-method signature="verifyPageTitleTest2()[pri:2, instance:stringProg.SideMenuTestNG@762ef0ea]" started-at="2021-07-13T18:03:01 IST" name="verifyPageTitleTest2" finished-at="2021-07-13T18:03:18 IST" duration-ms="17526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitleTest2 -->
+      </class> <!-- stringProg.SideMenuTestNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
