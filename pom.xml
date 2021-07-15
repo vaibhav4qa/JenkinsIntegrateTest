@@ -4,6 +4,11 @@
   <artifactId>JenkinsTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>  
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <aspectj.version>1.8.10 </aspectj.version> 
+  </properties>
+  
   <dependencies>
   
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -36,6 +41,28 @@
 </dependency>
 
 
+<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.14.0</version>
+</dependency>
+
+
+<dependency>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjweaver</artifactId>
+                    <version>${aspectj.version}</version>
+                </dependency>
+
+
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>4.4.3</version>
+</dependency>
+
 
 
 </dependencies>
@@ -48,6 +75,9 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>11</release>
+                    <argLine>
+                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                </argLine>
                 </configuration>
             </plugin>
             
@@ -61,11 +91,11 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					
-					<systemPropertyVariables>
+					 <!--   <systemPropertyVariables>
 					
-					<browser>${Browser}</browser>
+					<browser>chrome</browser>
 					
-					</systemPropertyVariables>
+					</systemPropertyVariables>-->
 					
 				</configuration>
 			</plugin>
